@@ -14,7 +14,7 @@ import time
 load_dotenv()
 
 # Set the username of the Twitter account
-userName = 'elonmusk'  # You can modify this for different users dynamically
+userName = 'realDonaldTrump'  # You can modify this for different users dynamically
 
 # Function to check internet connection
 def check_internet():
