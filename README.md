@@ -48,6 +48,8 @@ I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual develo
 
 # 👩🏻‍💻 Part 1 : ScraperX with Virtual Environment Setup
 
+The Only Python Script File you need : [main.py](https://github.com/themanavpaul/scraper/main.py)
+
 This guide outlines the steps to set up a virtual environment, install dependencies, and run the Python script for fetching tweets from a specified Twitter user.
 
 **Prerequisites:**
