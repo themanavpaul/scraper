@@ -44,6 +44,8 @@ I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual develo
 * `requests`
 * `twikit`
 
+<br>
+
 # 👩🏻‍💻 Part 1 : ScraperX with Virtual Environment Setup
 
 This guide outlines the steps to set up a virtual environment, install dependencies, and run the Python script for fetching tweets from a specified Twitter user.
