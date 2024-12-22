@@ -105,23 +105,14 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 
 <br>
 
-## **Installation:**
+## **Installation and Execution:**
 
 1. Install required packages using pip:
 
    ```bash
    pip install python-dotenv requests twikit
-
-2. Create a ```.env``` file (optional) and add your Twitter API credentials:
   
-   ```bash
-     USER_NAME=<your_twitter_username>
-     E-MAIL=<your_email>
-     PASS_WORD=<your_password>
-   ```
-     Note: This step is optional. If you don't use a .env file, you'll need to modify the login_to_client function to directly handle the authentication.
-  
-3. Usage:
+2. Usage:
 
   - Save the script: Save the provided code as `main.py`.
 
@@ -130,6 +121,21 @@ This guide outlines the steps to set up a virtual environment, install dependenc
     ```Bash
     python main.py
     ```
+
+3. Input your Twitter API credentials and make sure you're logged-in in as well:
+  
+   ```bash
+     Enter your Username=<your_twitter_username>
+     Enter Your E-MAIL=<your_email>
+     Enter you Password=<your_password>
+   ```
+     Note: This part will handle the authetication.
+
+   Input the twitter account username you wish to scrape (eg. elonmusk, realdonaldtrump)
+
+   ```bash
+      Enter the twitter account username you wish to scrape: <desired_twitter_account>
+   ```
     
 ---
 
@@ -143,9 +149,10 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 - **Stores data in CSV:** Saves fetched tweets to a CSV file with relevant information (tweet ID, content, created at, etc.).
 - **Threshold date:** Allows you to specify a threshold date. The script will stop fetching tweets if it encounters tweets older than the threshold.
 - **Error handling:** Includes basic error handling for various exceptions.
+  
+<br>
 
-**Disclaimer:**
-
+> **Disclaimer:**
 This script is provided for **educational and experimental purposes only**.
 Use this script responsibly as it does **not** utilize the official Twitter API and may become **deprecated** in the future due to potential changes in Twitter's website structure or data availability. 
 The author is not responsible for any misuse or consequences of using this script.
@@ -220,20 +227,9 @@ Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sen
 * Acknowledge any limitations of the cleaning process (e.g., assumptions made, data quality issues that remain).
 * Discuss potential future improvements or extensions to the cleaning process.
 
-**7. Appendix (Optional)**
-
-* Include any supporting materials (e.g., code snippets, visualizations, detailed explanations of specific techniques).
-
-**Additional Considerations:**
-
-* **Clarity and Conciseness:** Use clear and concise language throughout the documentation.
-* **Reproducibility:** Provide enough detail to allow others to reproduce your cleaning steps.
-* **Code Comments:** Include comments within your code to explain the purpose of each step.
-* **Version Control:** Consider using version control (e.g., Git) to track changes to your code and documentation.
-
-By following this structured outline and incorporating the above considerations, you can create a comprehensive and informative documentation for your Twitter data cleaning project in your Jupyter Notebook.
-
 ---
+
+<br>
 
 ## License
 
