@@ -1,6 +1,10 @@
-# ScraperX : Twitter Tweet Scraper
+# ScraperX : Twitter Tweet Scraper with Sentiment Analysis
 
-This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.
+- Part 1: This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.
+- Part 2: Dataset (CSV File) will follow Data Pre-Processing Techniques (Data Cleaning).
+- Part 3: Sentiment Analysis Will be Applicable on the Cleaned Dataset.
+
+<br>
 
 ## 👋🏻 Hey Software Engineers! 
 
@@ -82,7 +86,7 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 5. **Create a virtual environment:**
 
    ```Bash
-   python3 -m venv my_env_project
+      python3 -m venv my_env_project
    ```
    
    Replace my_env_project with your desired virtual environment name. This command creates a virtual environment directory named my_env_project in your current working directory.
@@ -90,7 +94,12 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 6. **Activate the virtual environment:**
 
    ```Bash
-   source my_env_project/bin/activate
+      source my_env_project/bin/activate
+      # For Linux/MacOs Users
+   ```
+   ```Bash
+      myenv\Scripts\activate
+      For Windows Users
    ```
    
    This command activates the virtual environment. You'll see the name of the virtual environment prepended to your terminal prompt, indicating that you're now working within the isolated environment.
@@ -98,7 +107,7 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 7. **Verify environment activation (optional):**
 
    ```Bash
-   python
+      python
    ```
    
    This command (without arguments) will typically display the Python version within the virtual environment. If you see the correct Python 3 version, you've successfully activated the environment.
