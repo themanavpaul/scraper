@@ -97,7 +97,7 @@ This guide outlines the steps to set up a virtual environment, install dependenc
    
    This command (without arguments) will typically display the Python version within the virtual environment. If you see the correct Python 3 version, you've successfully activated the environment.
 
----
+<br>
 
 ## **Installation:**
 
@@ -107,12 +107,13 @@ This guide outlines the steps to set up a virtual environment, install dependenc
    pip install python-dotenv requests twikit
 
 2. Create a ```.env``` file (optional) and add your Twitter API credentials:
-  ```
-  USER_NAME=<your_twitter_username>
-  E-MAIL=<your_email>
-  PASS_WORD=<your_password>
-  ```
-  Note: This step is optional. If you don't use a .env file, you'll need to modify the login_to_client function to directly handle the authentication.
+  
+   ```bash
+     USER_NAME=<your_twitter_username>
+     E-MAIL=<your_email>
+     PASS_WORD=<your_password>
+   ```
+     Note: This step is optional. If you don't use a .env file, you'll need to modify the login_to_client function to directly handle the authentication.
   
 3. Usage:
 
@@ -123,7 +124,10 @@ This guide outlines the steps to set up a virtual environment, install dependenc
     ```Bash
     python main.py
     ```
+    
 ---
+
+<br>
 
 ## **Script Functionality:**
 
@@ -134,14 +138,95 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 - **Threshold date:** Allows you to specify a threshold date. The script will stop fetching tweets if it encounters tweets older than the threshold.
 - **Error handling:** Includes basic error handling for various exceptions.
 
-
-
 **Disclaimer:**
 
 This script is provided for **educational and experimental purposes only**.
 Use this script responsibly as it does **not** utilize the official Twitter API and may become **deprecated** in the future due to potential changes in Twitter's website structure or data availability. 
 The author is not responsible for any misuse or consequences of using this script.
 Use this script with caution and at your own risk.
+
+---
+
+<br>
+
+# Dataset Sentiment Analysis
+
+Here is the Jupyter Notebook with all the commands and techniques : 
+
+## Step1 :  **Data Pre-Processing**
+
+**1. Introduction**
+
+* **Project Overview:** Briefly describe the purpose of cleaning the scraped Twitter data and the intended use of the cleaned dataset (e.g., sentiment analysis, topic modeling).
+* **Data Source:** Specify how the Twitter data was obtained (e.g., Twitter API, web scraping).
+* **Data Description:** Provide a high-level overview of the raw data, including:
+    - Number of tweets.
+    - Data fields present (e.g., tweet content, source, timestamp).
+    - Data format (e.g., CSV, JSON).
+    - Any initial observations about the data quality (e.g., missing values, duplicates, inconsistencies).
+
+**2. Data Loading and Exploration**
+
+* **Loading the Data:** Describe the steps involved in loading the Twitter data into your Jupyter Notebook environment. Mention the libraries used (e.g., pandas).
+* **Initial Exploration:** Summarize key characteristics of the dataset using techniques like:
+    - `df.head()` and `df.tail()` to view the first and last few rows.
+    - `df.info()` to get data type information and check for missing values.
+    - `df.describe()` to get summary statistics for numerical columns (if applicable).
+    - Visualizations (histograms, scatter plots) to understand data distributions and relationships (if relevant).
+
+**3. Data Cleaning Steps**
+
+* **Handling Missing Values:**
+    - Identify columns with missing values.
+    - Explain the chosen strategy for handling missing data (e.g., deletion, imputation, leaving as is).
+    - Justify your approach based on the data and analysis goals.
+* **Removing Duplicates:**
+    - Describe the criteria used to identify duplicate tweets (e.g., exact content matches, duplicates based on specific fields).
+    - Explain the method used to remove duplicates (e.g., `df.drop_duplicates()`).
+* **Data Transformation and Feature Engineering (if applicable):**
+    - Describe any transformations applied to the data, including:
+        - Data type conversions (e.g., converting strings to dates).
+        - Feature engineering (creating new features based on existing ones).
+    - Provide justification for each transformation.
+* **Text Preprocessing (if applicable):**
+    - If dealing with textual data (tweet content), describe the text cleaning techniques used:
+        - Removing punctuation, stop words, URLs, mentions.
+        - Tokenization (splitting text into words).
+        - Stemming/lemmatization (reducing words to their base form).
+    - Explain the rationale behind each preprocessing step.
+
+**4. Data Validation and Quality Checks**
+
+* **Data Consistency Checks:**
+    - Describe how you ensured data integrity (e.g., verifying data ranges, checking for inconsistencies between related columns).
+* **Data Quality Assessment (optional):**
+    - Discuss any metrics used to evaluate the quality of the cleaned data (e.g., data completeness, accuracy, consistency).
+
+**5. Saving the Cleaned Data**
+
+* Describe how you saved the cleaned dataset (e.g., CSV, pickle file).
+* Specify the file path and name.
+
+**6. Conclusion**
+
+* Briefly summarize the key steps involved in cleaning the Twitter data.
+* Acknowledge any limitations of the cleaning process (e.g., assumptions made, data quality issues that remain).
+* Discuss potential future improvements or extensions to the cleaning process.
+
+**7. Appendix (Optional)**
+
+* Include any supporting materials (e.g., code snippets, visualizations, detailed explanations of specific techniques).
+
+**Additional Considerations:**
+
+* **Clarity and Conciseness:** Use clear and concise language throughout the documentation.
+* **Reproducibility:** Provide enough detail to allow others to reproduce your cleaning steps.
+* **Code Comments:** Include comments within your code to explain the purpose of each step.
+* **Version Control:** Consider using version control (e.g., Git) to track changes to your code and documentation.
+
+By following this structured outline and incorporating the above considerations, you can create a comprehensive and informative documentation for your Twitter data cleaning project in your Jupyter Notebook.
+
+---
 
 ## License
 
