@@ -151,7 +151,7 @@ Use this script with caution and at your own risk.
 
 # Dataset Sentiment Analysis
 
-Here is the Jupyter Notebook with all the commands and techniques : 
+Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraper/blob/main/Tweets_analysis.ipynb)
 
 ## Step1 :  **Data Pre-Processing**
 
