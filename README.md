@@ -44,7 +44,7 @@ I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual develo
 * `requests`
 * `twikit`
 
-# 👩🏻‍💻 ScraperX with Virtual Environment Setup
+# 👩🏻‍💻 Part 1 : ScraperX with Virtual Environment Setup
 
 This guide outlines the steps to set up a virtual environment, install dependencies, and run the Python script for fetching tweets from a specified Twitter user.
 
@@ -173,7 +173,7 @@ Use this script with caution and at your own risk.
 
 <br>
 
-# 📗 Dataset Sentiment Analysis
+# 📗 Part 2 & 3 : Dataset Sentiment Analysis
 
 Your Dataset Created : [Twitter_Dataset.csv](https://github.com/themanavpaul/scraper/blob/main/combined_csv.csv)
 
