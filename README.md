@@ -2,7 +2,13 @@
 
 This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.
 
-## **Features:**
+## 👋🏻 Hey Software Engineers! 
+
+I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual developer on a mission to demystify Generative AI and Machine Learning. Fascinated by its potential, I'm embarking on a 30-day journey to master this cutting-edge technology. This repository is my digital travelogue, where I'll share insights, experiments, and code as I unravel the secrets of AI and ML.
+
+👨🏻‍💻 Connect with me on [LinkedIn](https://www.linkedin.com/in/manav-paul/) and [X(Twitter)](https://x.com/themanavpaul).
+
+## 🚀 **Features:**
 
 * Fetches tweets from a given Twitter user.
 * Handles Twitter API rate limits with retries and exponential backoff.
@@ -11,7 +17,7 @@ This Python script fetches tweets from a specified Twitter user, extracts releva
 * Includes a threshold date to stop scraping older tweets.
 * Handles potential errors and exceptions gracefully.
 
-## **Possible Use Cases (Illustrative):**
+## 🎯 **Possible Use Cases (Illustrative):**
 
 * **Data Analysis:** 
     * Analyze tweet sentiment over time.
@@ -32,7 +38,7 @@ This Python script fetches tweets from a specified Twitter user, extracts releva
 * `requests`
 * `twikit`
 
-# ScraperX with Virtual Environment Setup
+# 👩🏻‍💻 ScraperX with Virtual Environment Setup
 
 This guide outlines the steps to set up a virtual environment, install dependencies, and run the Python script for fetching tweets from a specified Twitter user.
 
@@ -149,12 +155,12 @@ Use this script with caution and at your own risk.
 
 <br>
 
-# Dataset Sentiment Analysis
+# 📗 Dataset Sentiment Analysis
 
 Your Dataset Created : [Twitter_Dataset.csv](https://github.com/themanavpaul/scraper/blob/main/combined_csv.csv)
 Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraper/blob/main/Tweets_analysis.ipynb)
 
-## Step1 :  **Data Pre-Processing**
+## 🔰 Step1 :  **Data Pre-Processing**
 
 **1. Introduction**
 
