@@ -153,7 +153,7 @@ This guide outlines the steps to set up a virtual environment, install dependenc
 ## **Script Functionality:**
 
 - **Fetches tweets:** Retrieves tweets from the specified Twitter user in batches.
-- Handles rate limits: Implements mechanisms to handle Twitter API rate limits, including exponential backoff and retries.
+- **Handles rate limits:** Implements mechanisms to handle Twitter API rate limits, including exponential backoff and retries.
 - **Checks internet connection:** Monitors the internet connection and waits for reconnection if it's lost.
 - **Stores data in CSV:** Saves fetched tweets to a CSV file with relevant information (tweet ID, content, created at, etc.).
 - **Threshold date:** Allows you to specify a threshold date. The script will stop fetching tweets if it encounters tweets older than the threshold.
