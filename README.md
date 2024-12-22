@@ -12,6 +12,8 @@ I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual develo
 
 👨🏻‍💻 Connect with me on [LinkedIn](https://www.linkedin.com/in/manav-paul/) and [X(Twitter)](https://x.com/themanavpaul).
 
+<br>
+
 ## 🚀 **Features:**
 
 * Fetches tweets from a given Twitter user.
