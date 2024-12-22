@@ -99,7 +99,7 @@ This guide outlines the steps to set up a virtual environment, install dependenc
    ```
    ```Bash
       myenv\Scripts\activate
-      For Windows Users
+      # For Windows Users
    ```
    
    This command activates the virtual environment. You'll see the name of the virtual environment prepended to your terminal prompt, indicating that you're now working within the isolated environment.
