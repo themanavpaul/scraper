@@ -181,7 +181,7 @@ Use this script with caution and at your own risk.
 
 Your Dataset Created : [Twitter_Dataset.csv](https://github.com/themanavpaul/scraperx-twitter-sentiment-analysis/blob/main/ceo_tweets_2024.csv)
 
-Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraper/blob/main/Tweets_analysis.ipynb)
+Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraperx-twitter-sentiment-analysis/blob/main/ceo_tweet_analysis.ipynb)
 
 Model used for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
 
