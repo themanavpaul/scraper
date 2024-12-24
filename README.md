@@ -1,6 +1,6 @@
 # ScraperX : Twitter Scraper with Sentiment Analysis
 
-- [Part 1:](#part1) This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.]
+- [Part 1:](#part1) Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.
 - [Part 2:](#part2) Dataset (CSV File) will follow Data Pre-Processing Techniques (Data Cleaning).
 - [Part 3:](#part3) Sentiment Analysis Will be Applicable on the Cleaned Dataset.
 
