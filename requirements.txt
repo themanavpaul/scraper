@@ -1,0 +1,10 @@
+pandas
+nltk
+torch
+matplotlib
+seaborn
+wordcloud
+transformers
+emoji
+twikit
+python-dotenv
