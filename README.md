@@ -1,8 +1,8 @@
 # ScraperX : Twitter Scraper with Sentiment Analysis
 
-- Part 1: This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.
-- Part 2: Dataset (CSV File) will follow Data Pre-Processing Techniques (Data Cleaning).
-- Part 3: Sentiment Analysis Will be Applicable on the Cleaned Dataset.
+- [Part 1:](#part1) This Python script fetches tweets from a specified Twitter user, extracts relevant data, and saves it to a CSV file.]
+- [Part 2:](#part2) Dataset (CSV File) will follow Data Pre-Processing Techniques (Data Cleaning).
+- [Part 3:](#part3) Sentiment Analysis Will be Applicable on the Cleaned Dataset.
 
 <br>
 
@@ -46,7 +46,7 @@ I'm [Manav Paul](https://linktr.ee/themanavpaul), a 24-year-old spiritual develo
 
 <br>
 
-# 👩🏻‍💻 Part 1 : ScraperX with Virtual Environment Setup
+# 👩🏻‍💻 Part 1 : ScraperX with Virtual Environment Setup <a name="part1"></a>
 
 The Only Python Script File you need : [ScrapeX](https://github.com/themanavpaul/scraper/blob/main/main.py)
 
@@ -185,7 +185,7 @@ Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sen
 
 Model used for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
 
-## 🔰 Step 1 :  **Data Pre-Processing**
+## 🔰 Step 1 :  **Data Pre-Processing** <a name="part2"></a>
 
 **1. Introduction**
 
@@ -243,7 +243,7 @@ Sure, here is the documentation for sentiment analysis for twitter in a structur
 
 <br>
 
-## 🔰 Step 2 :  **Sentiment Analysis of Twitter Data**
+## 🔰 Step 2 :  **Sentiment Analysis of Twitter Data** <a name="part3"></a>
 
 Model used for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
 
