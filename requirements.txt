@@ -8,3 +8,4 @@ transformers
 emoji
 twikit
 python-dotenv
+requests
