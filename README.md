@@ -177,15 +177,15 @@ Use this script with caution and at your own risk.
 
 <br>
 
-# 📗 Part 2 & 3 : Dataset Sentiment Analysis
+# 📗 Part 2 & 3 : Data Pre-Processing + Dataset Sentiment Analysis
 
 Your Dataset Created : [Twitter_Dataset.csv](https://github.com/themanavpaul/scraperx-twitter-sentiment-analysis/blob/main/ceo_tweets_2024.csv)
 
 Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraper/blob/main/Tweets_analysis.ipynb)
 
-Model SUed for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
+Model used for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
 
-## 🔰 Step1 :  **Data Pre-Processing**
+## 🔰 Step 1 :  **Data Pre-Processing**
 
 **1. Introduction**
 
@@ -239,11 +239,99 @@ Model SUed for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/
 * Describe how you saved the cleaned dataset (e.g., CSV, pickle file).
 * Specify the file path and name.
 
-**6. Conclusion**
+Sure, here is the documentation for sentiment analysis for twitter in a structured format:
 
-* Briefly summarize the key steps involved in cleaning the Twitter data.
-* Acknowledge any limitations of the cleaning process (e.g., assumptions made, data quality issues that remain).
-* Discuss potential future improvements or extensions to the cleaning process.
+<br>
+
+## 🔰 Step 2 :  **Sentiment Analysis of Twitter Data**
+
+Model used for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
+
+This document outlines the steps involved in performing sentiment analysis on a dataset of Twitter conversations. The code utilizes libraries like pandas, transformers, matplotlib, and seaborn.
+
+**1. Model Building:**
+
+This section outlines the process of loading a pre-trained sentiment analysis model and defining a function to predict sentiment for individual tweets.
+
+* **Tasks:**
+    * Imports libraries like `torch` and `transformers`.
+    * Loads a pre-trained sentiment analysis model ("cardiffnlp/twitter-roberta-base-sentiment") along with its tokenizer.
+    * Defines a function `predict_sentiment` that:
+        * Tokenizes the input text from a tweet.
+        * Moves the tokens to the same device (CPU or GPU) as the model.
+        * Uses the model to predict sentiment probabilities (Negative, Neutral, Positive).
+        * Identifies the sentiment with the highest probability and returns it as the sentiment label.
+* **Output:**
+    * A DataFrame with a new column named "Sentiment" containing the predicted sentiment for each tweet.
+
+**2. Sentiment by Username:**
+
+This section focuses on visualizing sentiment distribution across different usernames.
+
+* **Tasks:**
+    * Groups the DataFrame by username and sentiment to count the occurrences of each sentiment for each user.
+    * Creates a grouped bar chart using seaborn to visualize the sentiment distribution for each username.
+* **Output:**
+    * A bar chart depicting the sentiment distribution (Negative, Neutral, Positive) for each user.
+
+**3. Sentiment Retweets and Likes by Username:**
+
+This section explores the engagement metrics (retweets and likes) grouped by sentiment and username.
+
+* **Tasks:**
+    * Iterates through engagement metrics (retweets and likes).
+    * For each metric, creates a bar chart using seaborn to visualize the distribution of the metric (retweets/likes) across sentiments for each user.
+* **Output:**
+    * Two separate bar charts, one for retweets and another for likes, depicting the distribution of these metrics for each sentiment and username.
+
+**4. Sentiment Distribution Count:**
+
+This section generates a simple count plot to understand the overall sentiment distribution in the data.
+
+* **Tasks:**
+    * Creates a count plot using seaborn to visualize the total number of tweets categorized as Negative, Neutral, and Positive.
+* **Output:**
+    * A bar chart showing the sentiment distribution (count) of Negative, Neutral, and Positive tweets.
+
+**5. Sentiment Metrics (Retweets, Likes):**
+
+This section explores the relationship between sentiment and engagement metrics (retweets and likes).
+
+* **Tasks:**
+    * Iterates through engagement metrics (retweets and likes).
+    * For each metric, creates a bar chart using seaborn to visualize the average retweet/like count for tweets categorized as Negative, Neutral, and Positive.
+* **Output:**
+    * Two separate bar charts, one for retweets and another for likes, depicting the average retweet/like count for each sentiment category.
+
+**6. Sentiment Distribution by Username (Stacked Bar Chart):**
+
+This section presents a stacked bar chart to visualize the sentiment distribution for each user.
+
+* **Tasks:**
+    * Prepares the data for a stacked bar chart by grouping tweets by username and sentiment and calculating the count for each sentiment category.
+    * Creates a stacked bar chart using pandas to visualize the sentiment distribution (Negative, Neutral, Positive) for each user.
+    * Annotates the bars with the respective sentiment counts for better readability.
+* **Output:**
+    * A stacked bar chart where each bar represents a user, and the segments within the bar represent the counts of Negative, Neutral, and Positive tweets for that user.
+
+**7. Wordcloud:**
+
+This section (optional) generates a wordcloud to visualize the most frequent words used in the tweets.
+
+* **Tasks:**
+    * Defines a function `generate_wordcloud` that:
+        * Takes a DataFrame and the column name containing the tweet text as input.
+        * Concatenates all the tweet text into a single string.
+        * Generates a wordcloud using the `wordcloud` library to visualize the most frequent words.
+    * Applies the `generate_wordcloud` function to the "Cleaned Content" column (assuming it contains the cleaned tweet text).
+* **Output:**
+    * A wordcloud image depicting the most frequent words used in the tweets, with larger words representing higher frequency.
+
+**8. Saving Files and Model:**
+
+This section (optional) demonstrates how to save the processed DataFrame and the sentiment analysis model for future
+* Save & Download the Updated CSV file.
+* Save and Download the Model using pickle.
 
 ---
 
