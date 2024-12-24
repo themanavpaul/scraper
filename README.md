@@ -183,6 +183,8 @@ Your Dataset Created : [Twitter_Dataset.csv](https://github.com/themanavpaul/scr
 
 Here is the Jupyter Notebook with all the commands and techniques : [ScrapeX_Sentiment_Analysis.ipynb](https://github.com/themanavpaul/scraper/blob/main/Tweets_analysis.ipynb)
 
+Model SUed for Sentiment Analysis : [Roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
+
 ## 🔰 Step1 :  **Data Pre-Processing**
 
 **1. Introduction**
